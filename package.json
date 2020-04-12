@@ -39,7 +39,7 @@
     "eject": "react-scripts eject",
     "eslint": "eslint .",
     "eslint:fix": "eslint --fix .",
-    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\"",
+    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|scss)\"",
     "scsslint": "sass-lint-auto-fix"
   },
   "eslintConfig": {
@@ -52,14 +52,15 @@
   },
   "lint-staged": {
     "*.+(js|jsx)": [
-      "eslint --fix --max-warnings=0",
-      "prettier --write"
+      "eslint --max-warnings=0",
+      "prettier --check \"**/*.+(js|jsx)\""
     ],
-    "*.+(json|yml|yaml|md|vue)": [
-      "prettier --write"
+    "*.+(json|yml|yaml|md)": [
+      "prettier --check \"**/*.+(json|yml|yaml|md)\""
     ],
     "*.+(css|scss)": [
-      "sass-lint-auto-fix"
+      "sass-lint-auto-fix",
+      "prettier --check \"**/*.+(css|scss)\""
     ]
   },
   "devDependencies": {
