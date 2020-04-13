@@ -42,7 +42,7 @@ function TimeSeries(props) {
 
   useEffect(() => {
     setLogMode(props.logMode);
-  }, []);
+  }, [props.logMode]);
 
   useEffect(() => {
     setChartType(props.type);
