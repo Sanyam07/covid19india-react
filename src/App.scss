@@ -362,7 +362,7 @@ h6 {
         }
 
         &.spacer {
-          background: #fff !important;
+          background: $white !important;
           height: .5rem;
         }
 
@@ -399,7 +399,7 @@ h6 {
         transform: translateX(1rem);
 
         &:hover {
-          background: #fff !important;
+          background: $white !important;
         }
 
         td {
@@ -565,7 +565,6 @@ h6 {
       font-family: 'archia';
       font-size: .7rem !important;
       font-weight: 400;
-      font-family: 'archia';  
       height: .1rem;
     }
   }
@@ -807,7 +806,7 @@ h6 {
 
 .github {
   background: #000 !important;
-  color: #fff !important;
+  color: $white !important;
   justify-content: center;
   padding-left: .65rem;
   transition: all .2s ease-in-out;
@@ -1033,7 +1032,7 @@ table {
       }
 
       &.spacer {
-        background: #fff !important;
+        background: $white !important;
         height: .5rem;
       }
     }
@@ -1090,7 +1089,7 @@ table {
       transform: translateX(1rem);
 
       &:hover {
-        background: #fff !important;
+        background: $white !important;
       }
 
       td {
@@ -1519,7 +1518,7 @@ table {
 
     input.switch {
       appearance: none;
-      background-color: #fff;
+      background-color: $white;
       border: 2px solid #d9dadc;
       border-radius: 10px;
       cursor: pointer;
@@ -1575,7 +1574,7 @@ table {
 
 input.switch {
   appearance: none;
-  background-color: #fff;
+  background-color: $white;
   border: 2px solid #d9dadc;
   border-radius: 10px;
   cursor: pointer;
@@ -2558,7 +2557,7 @@ body.modal-open {
 
   .modal-content {
     align-self: center;
-    background: #fff;
+    background: $white;
     border-radius: 5px;
     cursor: default;
     height: 30rem;
@@ -2761,7 +2760,7 @@ select {
 }
 
 .filters {
-  background: #fff !important;
+  background: $white !important;
   border-radius: 5px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .12), inset 0 -1px 0 0 #dadce0;
   display: flex;
@@ -2829,7 +2828,7 @@ select {
 }
 
 .legend {
-  background: #fff;
+  background: $white;
   display: flex;
   flex-wrap: wrap;
   font-family: archia;
@@ -3446,7 +3445,7 @@ select {
           }
 
           &.spacer {
-            background: #fff !important;
+            background: $white !important;
             height: .5rem;
           }
         }
@@ -3484,7 +3483,7 @@ select {
           transform: translateX(1rem);
 
           &:hover {
-            background: #fff !important;
+            background: $white !important;
           }
 
           td {
@@ -3704,7 +3703,7 @@ select {
   }
 
   .mobile-disclaimer-button {
-    background-color: #fff;
+    background-color: $white;
     color: #808080;
     font-size: xx-small;
     justify-content: center;
