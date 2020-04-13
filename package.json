@@ -38,9 +38,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "eslint": "eslint .",
-    "eslint:fix": "eslint --fix .",
-    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|scss)\"",
-    "scsslint": "sass-lint-auto-fix"
+    "eslint:fix": "eslint --fix --max-warnings=0",
+    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|md)\"",
+    "scss-lint": "sass-lint 'src/**/*.scss' -v -f table --max-warnings 328",
+    "scss-lint:fix": "sass-lint-auto-fix 'src/**/*.scss' -d -h"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -52,15 +53,15 @@
   },
   "lint-staged": {
     "*.+(js|jsx)": [
-      "eslint --fix --max-warnings=0",
+      "npm run eslint:fix",
       "prettier --write \"**/*.+(js|jsx)\""
     ],
     "*.+(json|yml|yaml|md)": [
       "prettier --write \"**/*.+(json|yml|yaml|md)\""
     ],
     "*.+(css|scss)": [
-      "sass-lint-auto-fix",
-      "prettier --write \"**/*.+(css|scss)\""
+      "npm run scss-lint:fix",
+      "npm run scss-lint"
     ]
   },
   "devDependencies": {

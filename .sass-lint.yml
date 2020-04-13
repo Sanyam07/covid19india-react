@@ -1,0 +1,7 @@
+# When there is no rules specified here, sass-lint takes the default configuration, which can be found in the below link.
+# Default configuration -> https://github.com/sasstools/sass-lint/blob/master/lib/config/sass-lint.yml
+
+# To override, uncomment the below lines and add the rules
+
+# rules:
+#   <replace rule name here>: 0 (skip) or 1 (warn) 2 (error)
