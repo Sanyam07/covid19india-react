@@ -52,15 +52,15 @@
   },
   "lint-staged": {
     "*.+(js|jsx)": [
-      "eslint --max-warnings=0",
-      "prettier --check \"**/*.+(js|jsx)\""
+      "eslint --fix --max-warnings=0",
+      "prettier --write \"**/*.+(js|jsx)\""
     ],
     "*.+(json|yml|yaml|md)": [
-      "prettier --check \"**/*.+(json|yml|yaml|md)\""
+      "prettier --write \"**/*.+(json|yml|yaml|md)\""
     ],
     "*.+(css|scss)": [
       "sass-lint-auto-fix",
-      "prettier --check \"**/*.+(css|scss)\""
+      "prettier --write \"**/*.+(css|scss)\""
     ]
   },
   "devDependencies": {
