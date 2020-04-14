@@ -41,7 +41,7 @@
     "eslint:fix": "eslint --fix --max-warnings=0",
     "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|md)\"",
     "scss-lint": "sass-lint 'src/**/*.scss' -v -f table --max-warnings 328",
-    "scss-lint:fix": "sass-lint-auto-fix 'src/**/*.scss' -d -h"
+    "scss-lint:fix": "sass-lint-auto-fix 'src/**/*.scss' -d -h -c '.sass-lint-auto-fix.yml'"
   },
   "eslintConfig": {
     "extends": "react-app"
